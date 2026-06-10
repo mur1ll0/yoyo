@@ -104,6 +104,37 @@ export default function Chat24hSection() {
 
         <div
           ref={(el) => (chatBubbleRefs.current[9] = el)}
+          className="chat-bubble bg-neon-pink/15 border border-neon-pink/30 rounded-2xl rounded-bl-none p-4 text-left max-w-[85%] shadow-lg"
+        >
+          <span className="text-[10px] text-neon-pink block mb-1">Yoyo</span>
+          <p className="text-sm text-purple-100">Minha nossaaa vc realmente gosta de jogos 😍</p>
+        </div>
+
+        <div
+          ref={(el) => (chatBubbleRefs.current[10] = el)}
+          className="chat-bubble bg-neon-pink/15 border border-neon-pink/30 rounded-2xl rounded-bl-none p-4 text-left max-w-[85%] shadow-lg"
+        >
+          <span className="text-[10px] text-neon-pink block mb-1">Yoyo</span>
+          <p className="text-sm text-purple-100">Vou ter que me segurar pra não ser emocionada contigo kkkk</p>
+        </div>
+
+        <div
+          ref={(el) => (chatBubbleRefs.current[11] = el)}
+          className="mx-auto p-4 rounded-2xl bg-[#0a0014]/60 bg-gradient-to-r from-neon-cyan/10 via-transparent to-neon-purple/10 border border-dashed border-neon-cyan/40 max-w-[90%] text-center text-neon-cyan text-xs italic shadow-[0_0_15px_rgba(6,182,212,0.15)] leading-relaxed relative"
+        >
+          <div className="absolute -top-2 left-1/2 -translate-x-1/2 bg-[#0a0014] px-2 text-[10px] text-neon-cyan tracking-wider uppercase font-semibold">Meu Pensamento</div>
+          "Ler isso me fez sorrir pela primeira vez após uma mensagem sua!"
+        </div>
+
+        <div
+          ref={(el) => (chatBubbleRefs.current[12] = el)}
+          className="flex justify-center items-center py-2"
+        >
+          <span className="text-neon-purple text-2xl font-bold tracking-[0.5em] animate-pulse">...</span>
+        </div>
+
+        <div
+          ref={(el) => (chatBubbleRefs.current[13] = el)}
           className="text-center text-xs text-purple-300 bg-white/5 border border-purple-500/10 rounded-full py-2.5 px-6 inline-block mx-auto max-w-[95%] select-none font-mono"
           style={{ display: 'block', margin: '1rem auto' }}
         >
@@ -111,7 +142,7 @@ export default function Chat24hSection() {
         </div>
 
         <div
-          ref={(el) => (chatBubbleRefs.current[10] = el)}
+          ref={(el) => (chatBubbleRefs.current[14] = el)}
           className="chat-bubble bg-neon-pink/15 border border-neon-pink/30 rounded-2xl rounded-bl-none p-4 text-left max-w-[85%] shadow-lg"
         >
           <span className="text-[10px] text-neon-pink block mb-1">Yoyo • WhatsApp</span>

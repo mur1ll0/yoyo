@@ -24,6 +24,7 @@ export default function Dashboard({ onPlayGame, onBack }) {
     outside: null,
     stereoHearts: null,
     nessasHoras: null,
+    thisIsWhatItFeelsLike: null,
   });
   const [hasProposed, setHasProposed] = useState(false);
   const [selectedArchetype, setSelectedArchetype] = useState(null);
@@ -36,18 +37,21 @@ export default function Dashboard({ onPlayGame, onBack }) {
       const results = await Promise.allSettled([
         fetchPreviewUrl('7MmG8p0F9N3C4AXdK6o6Eb', 'Outside', 'Calvin Harris'),
         fetchPreviewUrl('0qOnSQQF0yzuPWsXrQ9paz', 'Stereo Hearts', 'Gym Class Heroes'),
-        fetchPreviewUrl('2KWAxm4LMVVVFgMmXWgeCG', 'Nessas Horas', 'Renato Vianna')
+        fetchPreviewUrl('2KWAxm4LMVVVFgMmXWgeCG', 'Nessas Horas', 'Renato Vianna'),
+        fetchPreviewUrl('3dDyI2Mbw4RFIfXMGAeOzp', 'This Is What It Feels Like', 'Armin van Buuren')
       ]);
       
       if (active) {
         const outsideUrl = results[0].status === 'fulfilled' ? results[0].value : null;
         const stereoUrl = results[1].status === 'fulfilled' ? results[1].value : null;
         const nessasUrl = results[2].status === 'fulfilled' ? results[2].value : null;
+        const feelsLikeUrl = results[3].status === 'fulfilled' ? results[3].value : null;
 
         setPreviewUrls({
           outside: outsideUrl,
           stereoHearts: stereoUrl,
-          nessasHoras: nessasUrl
+          nessasHoras: nessasUrl,
+          thisIsWhatItFeelsLike: feelsLikeUrl
         });
       }
     }
@@ -67,7 +71,9 @@ export default function Dashboard({ onPlayGame, onBack }) {
         play(previewUrls.stereoHearts, 154);
       }
     } else if (activeSection === 5) {
-      if (hasProposed && previewUrls.nessasHoras) {
+      if (previewUrls.thisIsWhatItFeelsLike) {
+        play(previewUrls.thisIsWhatItFeelsLike, 35);
+      } else if (hasProposed && previewUrls.nessasHoras) {
         play(previewUrls.nessasHoras, 62);
       } else if (previewUrls.stereoHearts) {
         play(previewUrls.stereoHearts, 154);

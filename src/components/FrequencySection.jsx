@@ -40,7 +40,7 @@ export default function FrequencySection({ isActive }) {
           </div>
           <p className="text-xs text-purple-300 uppercase tracking-widest font-semibold">E o meu pensamento:</p>
           <div className="bg-neon-cyan/10 p-4 rounded-xl border border-neon-cyan/20 text-neon-cyan font-bold text-lg italic shadow-[0_0_15px_rgba(6,182,212,0.1)]">
-            "você já era o meu alguém especial."
+            "você já era o meu alguém especial!"
           </div>
         </div>
       </div>

@@ -42,7 +42,7 @@ export function AudioProvider({ children }) {
     const audio = audioRef.current;
     if (audio) {
       // Background music volume is capped at 50% max (targetMax = 0.5 * globalVolume)
-      const targetMax = isMutedRef.current ? 0 : globalVolumeRef.current * 0.5;
+      const targetMax = isMutedRef.current ? 0 : globalVolumeRef.current * 0.3;
       audio.volume = fadeProgressRef.current * targetMax;
     }
     // SFX volumes are capped at 100% max (targetSfxVolume = 1.0 * globalVolume)

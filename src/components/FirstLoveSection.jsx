@@ -43,7 +43,7 @@ export default function FirstLoveSection() {
 
         <div className="max-w-xl text-center px-4 mt-10 bg-neon-purple/5 p-6 rounded-2xl border border-neon-purple/20 shadow-md">
           <p className="text-sm text-purple-200 leading-relaxed font-body">
-            "Nesse mesmo dia era o seu aniversário. E quem ganhou o melhor presente fui eu."
+            "Nesse mesmo dia era o seu aniversário. E quem ganhou o melhor presente fui eu!"
           </p>
         </div>
       </div>

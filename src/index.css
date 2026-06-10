@@ -53,3 +53,15 @@
   animation: floatSlow 12s ease-in-out infinite;
 }
 
+@keyframes mapLineDash {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+.map-polyline-flow {
+  stroke-dasharray: 8, 8;
+  animation: mapLineDash 1.5s linear infinite;
+  filter: drop-shadow(0 0 6px rgba(244, 114, 182, 0.9));
+}
+
