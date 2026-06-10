@@ -1,0 +1,9 @@
+# Assets directory
+
+Place static images here:
+
+- `door.png` — Fantasy/romantic wooden door illustration (AI-generated)
+- `lock.png` — Heart-shaped padlock illustration (AI-generated)
+- `meteor.png` — Meteor/comet illustration
+- `space-bg.png` — Space background with Boo app theme
+- `audio/unlock.mp3` — Sound effect for door unlocking

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #0a0014;
+    color: #f3e8ff;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: rgba(194, 69, 240, 0.4);
+    color: #fff;
+  }
+}
+
+@layer components {
+  .screen-container {
+    @apply relative min-h-screen w-full overflow-hidden;
+  }
+
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl;
+  }
+}
