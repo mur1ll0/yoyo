@@ -35,10 +35,10 @@ export default function Dashboard({ onPlayGame, onBack }) {
     let active = true;
     async function loadTracks() {
       const results = await Promise.allSettled([
-        fetchPreviewUrl('7MmG8p0F9N3C4AXdK6o6Eb', 'Outside', 'Calvin Harris'),
-        fetchPreviewUrl('0qOnSQQF0yzuPWsXrQ9paz', 'Stereo Hearts', 'Gym Class Heroes'),
-        fetchPreviewUrl('2KWAxm4LMVVVFgMmXWgeCG', 'Nessas Horas', 'Renato Vianna'),
-        fetchPreviewUrl('3dDyI2Mbw4RFIfXMGAeOzp', 'This Is What It Feels Like', 'Armin van Buuren')
+        fetchPreviewUrl('Outside', 'Calvin Harris'),
+        fetchPreviewUrl('Stereo Hearts', 'Gym Class Heroes'),
+        fetchPreviewUrl('Nessas Horas', 'Renato Vianna'),
+        fetchPreviewUrl('This Is What It Feels Like', 'Armin van Buuren')
       ]);
       
       if (active) {

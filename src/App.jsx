@@ -1,14 +1,12 @@
 import { useState, useRef, useEffect } from 'react';
 import LoginScreen from './components/LoginScreen';
 import Dashboard from './components/Dashboard';
-import GameScreen from './components/GameScreen';
 import VolumeControl from './components/VolumeControl';
 import gsap from 'gsap';
 
 const VIEWS = {
   LOGIN: 'LOGIN',
   DASHBOARD: 'DASHBOARD',
-  GAME: 'GAME',
 };
 
 export default function App() {
@@ -49,12 +47,8 @@ export default function App() {
       )}
       {currentView === VIEWS.DASHBOARD && (
         <Dashboard
-          onPlayGame={() => navigateTo('GAME')}
           onBack={() => navigateTo('LOGIN')}
         />
-      )}
-      {currentView === VIEWS.GAME && (
-        <GameScreen onBack={() => navigateTo('DASHBOARD')} />
       )}
 
       {/* Floating Volume Controller */}

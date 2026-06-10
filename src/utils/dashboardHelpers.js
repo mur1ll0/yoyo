@@ -80,25 +80,12 @@ export function fetchDeezerJSONP(title, artist) {
   });
 }
 
-export async function fetchPreviewUrl(spotifyTrackId, title, artist) {
+export async function fetchPreviewUrl(title, artist) {
   try {
     const url = await fetchDeezerJSONP(title, artist);
     if (url) return url;
   } catch (e) {
     console.warn(`Direct Deezer JSONP search failed for ${title}:`, e.message);
-  }
-
-  try {
-    const response = await fetchWithTimeout(`https://api.allorigins.win/get?url=${encodeURIComponent(`https://open.spotify.com/embed/track/${spotifyTrackId}`)}`, { timeout: 3000 });
-    const data = await response.json();
-    const html = data.contents;
-    
-    const match = html.match(/"(preview_url|audioPreview)":"(https:[^"]+)"/);
-    if (match && match[2]) {
-      return match[2].replace(/\\/g, '');
-    }
-  } catch (e) {
-    console.warn(`Failed to get preview from Spotify embed for ${title}:`, e);
   }
 
   try {
