@@ -37,3 +37,19 @@
     @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl;
   }
 }
+
+@keyframes pulseBar {
+  0% { transform: scaleY(0.2); }
+  100% { transform: scaleY(1.2); }
+}
+
+@keyframes floatSlow {
+  0% { transform: translateY(0) translateX(0) scale(1); }
+  50% { transform: translateY(-40px) translateX(25px) scale(1.1); }
+  100% { transform: translateY(0) translateX(0) scale(1); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 12s ease-in-out infinite;
+}
+

@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import LoginScreen from './components/LoginScreen';
 import Dashboard from './components/Dashboard';
 import GameScreen from './components/GameScreen';
+import VolumeControl from './components/VolumeControl';
 import gsap from 'gsap';
 
 const VIEWS = {
@@ -56,6 +57,9 @@ export default function App() {
         <GameScreen onBack={() => navigateTo('DASHBOARD')} />
       )}
 
+      {/* Floating Volume Controller */}
+      <VolumeControl />
+
       {/* Global Transition White Overlay */}
       {showTransition && (
         <div
@@ -67,4 +71,5 @@ export default function App() {
     </>
   );
 }
+
 

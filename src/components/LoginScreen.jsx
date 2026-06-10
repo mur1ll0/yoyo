@@ -16,14 +16,14 @@ export default function LoginScreen({ onEnter }) {
   const shackleRef = useRef(null);
   const padlockBodyRef = useRef(null);
   const heartContainerRef = useRef(null);
-  const { play } = useAudio();
+  const { playSFX } = useAudio();
 
   // ── Padlock unlock ──
   const handleUnlock = useCallback(() => {
     if (phase !== 'idle') return;
     setPhase('unlocking');
-    play('/assets/audio/unlock.mp3');
-  }, [phase, play]);
+    playSFX(`${import.meta.env.BASE_URL}assets/audio/unlock.mp3`);
+  }, [phase, playSFX]);
 
   // ── Unlocking Animation Timeline ──
   useGsapTimeline(() => {
@@ -50,6 +50,7 @@ export default function LoginScreen({ onEnter }) {
   // ── Door Open + Light transition to solid white ──
   useGsapTimeline(() => {
     if (phase === 'opening') {
+      playSFX(`${import.meta.env.BASE_URL}assets/audio/fairy-dust-9.mp3`);
       const tl = gsap.timeline({ onComplete: () => onEnter() });
 
       // 1. Doors swing open in 3D (rotateY + dissolve)
