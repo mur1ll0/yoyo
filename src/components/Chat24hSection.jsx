@@ -36,7 +36,7 @@ export default function Chat24hSection() {
           ref={(el) => (chatBubbleRefs.current[0] = el)}
           className="chat-bubble bg-neon-cyan/15 border border-neon-cyan/30 rounded-2xl rounded-br-none p-4 text-right max-w-[85%] ml-auto shadow-lg"
         >
-          <span className="text-[10px] text-neon-cyan block mb-1">Você</span>
+          <span className="text-[10px] text-neon-cyan block mb-1">Murillo</span>
           <p className="text-sm text-purple-100">Estou de churrasqueiro aqui 🍖</p>
         </div>
 
@@ -59,7 +59,7 @@ export default function Chat24hSection() {
           ref={(el) => (chatBubbleRefs.current[3] = el)}
           className="chat-bubble bg-neon-cyan/15 border border-neon-cyan/30 rounded-2xl rounded-br-none p-4 text-right max-w-[85%] ml-auto shadow-lg"
         >
-          <span className="text-[10px] text-neon-cyan block mb-1">Você</span>
+          <span className="text-[10px] text-neon-cyan block mb-1">Murillo</span>
           <p className="text-sm text-purple-100">Eu queria tentar jogar badminton 🏸</p>
         </div>
 
@@ -67,7 +67,7 @@ export default function Chat24hSection() {
           ref={(el) => (chatBubbleRefs.current[4] = el)}
           className="chat-bubble bg-neon-cyan/15 border border-neon-cyan/30 rounded-2xl rounded-br-none p-4 text-right max-w-[85%] ml-auto shadow-lg"
         >
-          <span className="text-[10px] text-neon-cyan block mb-1">Você</span>
+          <span className="text-[10px] text-neon-cyan block mb-1">Murillo</span>
           <p className="text-sm text-purple-100">Mas não tem nenhum lugar aqui</p>
         </div>
 
@@ -91,7 +91,7 @@ export default function Chat24hSection() {
           ref={(el) => (chatBubbleRefs.current[7] = el)}
           className="mx-auto p-4 rounded-2xl bg-[#0a0014]/60 bg-gradient-to-r from-neon-cyan/10 via-transparent to-neon-purple/10 border border-dashed border-neon-cyan/40 max-w-[90%] text-center text-neon-cyan text-xs italic shadow-[0_0_15px_rgba(6,182,212,0.15)] leading-relaxed relative"
         >
-          <div className="absolute -top-2 left-1/2 -translate-x-1/2 bg-[#0a0014] px-2 text-[10px] text-neon-cyan tracking-wider uppercase font-semibold">Seu Pensamento</div>
+          <div className="absolute -top-2 left-1/2 -translate-x-1/2 bg-[#0a0014] px-2 text-[10px] text-neon-cyan tracking-wider uppercase font-semibold">Pensamento de Murillo</div>
           "Nesse momento eu já tinha percebido que nossa ligação ia ser muito profunda."
         </div>
 
@@ -122,7 +122,7 @@ export default function Chat24hSection() {
           ref={(el) => (chatBubbleRefs.current[11] = el)}
           className="mx-auto p-4 rounded-2xl bg-[#0a0014]/60 bg-gradient-to-r from-neon-cyan/10 via-transparent to-neon-purple/10 border border-dashed border-neon-cyan/40 max-w-[90%] text-center text-neon-cyan text-xs italic shadow-[0_0_15px_rgba(6,182,212,0.15)] leading-relaxed relative"
         >
-          <div className="absolute -top-2 left-1/2 -translate-x-1/2 bg-[#0a0014] px-2 text-[10px] text-neon-cyan tracking-wider uppercase font-semibold">Meu Pensamento</div>
+          <div className="absolute -top-2 left-1/2 -translate-x-1/2 bg-[#0a0014] px-2 text-[10px] text-neon-cyan tracking-wider uppercase font-semibold">Pensamento de Murillo</div>
           "Ler isso me fez sorrir pela primeira vez após uma mensagem sua!"
         </div>
 

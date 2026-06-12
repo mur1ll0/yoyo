@@ -93,12 +93,12 @@ export default function ProposalSection({ hasProposed, onPropose }) {
         </div>
 
         <div className="chat-bubble bg-neon-cyan/15 border border-neon-cyan/30 rounded-2xl rounded-br-none p-4 text-right max-w-[85%] ml-auto shadow-md">
-          <span className="text-[10px] text-neon-cyan block mb-1">Você</span>
+          <span className="text-[10px] text-neon-cyan block mb-1">Murillo</span>
           <p className="text-sm text-purple-100">Já rezo todo dia pra Deus unir nós dois, e te ajudar com sua faculdade</p>
         </div>
 
         <div className="chat-bubble bg-neon-cyan/15 border border-neon-cyan/30 rounded-2xl rounded-br-none p-4 text-right max-w-[85%] ml-auto shadow-md">
-          <span className="text-[10px] text-neon-cyan block mb-1">Você</span>
+          <span className="text-[10px] text-neon-cyan block mb-1">Murillo</span>
           <p className="text-sm text-purple-100">Então não precisa se preocupar pq eu já escolhi vc pra minha vida</p>
         </div>
 
@@ -124,14 +124,14 @@ export default function ProposalSection({ hasProposed, onPropose }) {
         <div className="chat-bubble bg-neon-pink/15 border border-neon-pink/30 rounded-2xl rounded-bl-none p-4 text-left max-w-[85%] shadow-md">
           <span className="text-[10px] text-neon-pink block mb-1">Yoyo</span>
           <div className="bg-purple-950/60 border-l-4 border-neon-cyan p-2 rounded mb-2 text-[11px] text-purple-300">
-            <span className="font-semibold text-neon-cyan block mb-0.5">Você</span>
+            <span className="font-semibold text-neon-cyan block mb-0.5">Murillo</span>
             Então não precisa se preocupar pq eu já escolhi vc pra minha vida
           </div>
           <p className="text-sm text-purple-100">E eu tbm te escolhi pra minha</p>
         </div>
 
         <div className="chat-bubble bg-neon-cyan/20 border border-neon-cyan/40 rounded-2xl rounded-br-none p-5 text-right max-w-[85%] ml-auto mt-6 shadow-[0_0_15px_rgba(6,182,212,0.15)]">
-          <span className="text-[10px] text-neon-cyan font-bold block mb-1">Você</span>
+          <span className="text-[10px] text-neon-cyan font-bold block mb-1">Murillo</span>
           <p className="text-sm font-semibold text-white">Ainda não te pedi oficialmente, namora comigo meu amor? 💍❤️</p>
         </div>
       </div>

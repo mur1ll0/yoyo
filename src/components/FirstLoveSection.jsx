@@ -12,11 +12,11 @@ export default function FirstLoveSection() {
         <h2 className="font-body text-3xl font-bold text-neon-cyan mb-2">Primeiro "Amor"</h2>
         <p className="text-purple-400 text-xs tracking-widest uppercase mb-4">Madrugada de 20 de Março</p>
 
-        <span className="text-sm font-mono text-neon-cyan tracking-wider mb-8 bg-neon-cyan/10 px-3 py-1 rounded border border-neon-cyan/20">Seu Aniversário</span>
+        <span className="text-sm font-mono text-neon-cyan tracking-wider mb-8 bg-neon-cyan/10 px-3 py-1 rounded border border-neon-cyan/20">Aniversário da Yoyo</span>
 
         <div className="w-full max-w-lg space-y-4">
           <div className="chat-bubble bg-neon-cyan/15 border border-neon-cyan/30 rounded-2xl rounded-br-none p-4 text-right max-w-[85%] ml-auto shadow-md">
-            <span className="text-[10px] text-neon-cyan block mb-1">Você</span>
+            <span className="text-[10px] text-neon-cyan block mb-1">Murillo</span>
             <p className="text-sm text-purple-100">Eu só não te digo as 3 palavras mágicas pq quero olhar nos teus olhos para dizer</p>
           </div>
 
@@ -26,7 +26,7 @@ export default function FirstLoveSection() {
           </div>
 
           <div className="chat-bubble bg-neon-cyan/15 border border-neon-cyan/30 rounded-2xl rounded-br-none p-4 text-right max-w-[85%] ml-auto shadow-md">
-            <span className="text-[10px] text-neon-cyan block mb-1">Você</span>
+            <span className="text-[10px] text-neon-cyan block mb-1">Murillo</span>
             <p className="text-sm text-purple-100">Vou deixar você descansar, depois te alugo por mais tempo...</p>
           </div>
 
@@ -36,7 +36,7 @@ export default function FirstLoveSection() {
           </div>
 
           <div className="chat-bubble bg-neon-cyan/15 border border-neon-cyan/30 rounded-2xl rounded-br-none p-4 text-right max-w-[85%] ml-auto shadow-md">
-            <span className="text-[10px] text-neon-cyan block mb-1">Você</span>
+            <span className="text-[10px] text-neon-cyan block mb-1">Murillo</span>
             <p className="text-sm text-purple-100">Te adoro demais amor.</p>
           </div>
         </div>
